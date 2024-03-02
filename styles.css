@@ -1,0 +1,219 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(219, 181, 119);
+}
+.logo {
+    float: left;
+    font-size: 2.5em;
+    color: rgb(234, 195, 195);
+    margin-top: 20px;
+    margin-left: 7%;
+    font-family: cursive;
+}
+nav {
+    background-color: rgb(34, 23, 23);
+    width: 100%;
+    height: 60px;
+    border-radius: 10px;
+    margin-top: 8px;
+    box-shadow: 10px 10px 5px rgb(53, 49, 49);   
+    /* align-items: center;
+    justify-content: center; */
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    float: right;
+    margin-top: 20px;
+    margin-right: 5px;
+}
+
+
+nav a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgb(184, 166, 201);
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    font-size: x-large;
+    font-weight: 600;
+}
+
+nav a:hover {
+    background-color: aquamarine;
+    color: rgb(69, 10, 10);
+    font-weight: 700;
+    border-radius: 10px;
+    transition: 0.5s ease;
+}
+
+/* main-container */
+.intro-container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 20px;
+    margin-top: 20px;
+}
+/* about me */
+
+.about-me {
+    background-color: rgb(228, 177, 177);
+    width: 60%;
+    height: 130vh;
+    border-radius: 20px;
+}
+.about-me h1{
+    display: flex;
+    align-items: end;
+    margin: 20px;
+    margin-left: 10%;
+    /* justify-content: center; */
+    height: 20vh;
+    font-family: cursive;
+    font-size: 3em;
+    font-weight: bolder;
+    color: rgb(70, 79, 79);
+}
+.about-me p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+    margin: 30px;
+    margin-left: 17%;
+    font-weight: 400;
+    font-size: 2em;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+
+/* my photo */
+.my-photo {
+    /* background-color: rgb(230, 158, 158); */
+    width: 40%;
+    height: 130vh;
+    border-radius: 20px;
+    /* padding: 5px;
+    padding-left: 20%; */
+}
+.my-photo img {
+    /* background-color: rgb(204, 114, 114); */
+    width: 90%;
+    height: 80%;
+    border-radius: 30%;
+    margin-top: 20%;
+    margin-left: 10%;
+    box-shadow: 10px 10px 5px rgb(210, 121, 5);
+    /* filter: drop-shadow(10px 10px 5px blue); */
+}
+
+/* my-skills */
+
+.skills-title {
+    margin: 3%;
+    margin-left: 15%;
+    font-size: 4em;
+    color: rgb(17, 59, 59);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+.my-skills-container {
+    background-color: rgb(233, 152, 152);
+    height: 180vh;
+    width: 98%;
+    
+    /* display: flex;     */
+    margin: 20px;
+    border-radius: 20px;
+}
+.row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.box {
+    background-color: rgb(212, 128, 233);
+    border: 2px solid black;
+    /* padding: 180px; */
+    padding: 20px;
+    width: 23%;
+    height: 40vh;
+
+    border-radius: 20px;
+    margin-top: 3%;
+    align-items: center;
+    justify-content: center;
+    display: block;
+    filter: drop-shadow(10px 10px 20px);
+}
+.box img {
+    margin-top: 20%;
+    margin-left: 25%;
+    width: 150px;
+    border-radius: 35px;
+    filter: drop-shadow(10px 10px 14px) ;
+}
+.box h2 {
+    display: none;
+}
+.box li {
+    display: none;
+}
+
+.box:hover h1{
+    display: none;
+}
+.box:hover h2{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 2em;
+    color: rgb(91, 55, 8);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.box:hover li{
+    margin-top: 13px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 1.5em;
+    color: rgb(60, 20, 5);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* transition: 10s ease; */
+}
+
+.footer {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#contact {
+    border: 2px solid rgb(21, 12, 1);
+    background-color: rgb(235, 119, 119);
+    width: 90%;
+    height: 40vh;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 2em;
+}
+
+#contact textarea{
+    font-size: 1em;
+    border-radius: 10px;
+    padding: 5px;
+    resize: none;
+}
+#suggest-statement{
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
