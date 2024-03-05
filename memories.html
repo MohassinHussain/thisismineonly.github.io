@@ -1,36 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PORTFOLIO/Memories</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    <nav>
+    <nav id="navbar">
         <h1 class="logo">MHs</h1>
-        <ul>
-            <li><a href="#">Mode</a></li>
+        <i class="fa-solid fa-bars" id="ham"></i>
+        <i class="fa-solid fa-xmark" id="close"></i>
+        <ul id="navbarUl">
+
+
+
+            <li><a class="mode-btn" id="dark-mode"><i class="fa-solid fa-moon"></i></a> </li>
+            <li><a class="mode-btn" id="light-mode"><i class="fa-regular fa-sun"></i></a> </li>
+
             <li><a href="index.html">Home</a></li>
             <li><a href="memories.html">Memories</a></li>
             <li><a href="projects.html">Projects</a></li>
-            <li><a href="resume.html">Resume</a></li> 
+            <li><a href="resume.html">Resume</a></li>
             <!-- dont forget to add login option to view resume -->
             <li><a href="#contact">Contact</a></li>
+
         </ul>
+
+
     </nav>
-    <h1>MEM</h1>
+    <div class="memories-heading">
+        <h1>MEMORIZING ALL STUFF. X, KEEP IN ONE PLACE .✓</h1>
+    </div>
+
+    <div class="memories-main-container">
+        <h1 class="side-heading">
+            Front-end:
+        </h1>
+        <div class="front-mem">
+
+            <div class="mem-box" id="mem1">
+                <h1>
+                    HTML/CSS
+                </h1>
+                <p><a href="https://fontawesome.com">font awesome</a></p>
+                <hr>
+                <p><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS">HTML with CSS MDN</a></p>
+                <hr>
+                <p><a href="https://coolors.co/">Coolors</a></p>
+                <hr>
+                <p><a href="https://css-tricks.com/">CSS Tricks</a></p>
+                <hr>
+            </div>
+
+            <div class="mem-box" id="mem2">
+                <h1>
+                    JS
+                </h1>
+                <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">MDN JS web docs</a></p>
+                <hr>
+                <p><a href=""></a></p>
+                <hr>
+
+            </div>
+
+            <div class="mem-box" id="mem3">
+                <h1>React</h1>
+                <p><a href="https://www.npmjs.com/package/package">npm package</a></p>
+                <hr>
+                <p><a href="https://react.dev/learn">Docs Learn React</a></p>
+                <hr>
+                <p><a href=""></a></p>
+                <hr>
+            </div>
+
+        </div>
+        <h1 class="side-heading">
+            Back-end:
+        </h1>
+        <div class="back-mem">
+
+            <div class="mem-box" id="mem4">
+                <h1>FW NODE JS</h1>
+                <p><a href=""></a></p>
+                <hr>
+                <p><a href=""></a></p>
+                <hr>
+                <p><a href=""></a></p>
+                <hr>
+
+            </div>
+
+            <div class="mem-box" id="meme5">
+                <h1>Express</h1>
+                <p><a href=""></a></p>
+                <hr>
+                <p><a href=""></a></p>
+                <hr>
+                <p><a href=""></a></p>
+                <hr>
+            </div>
+            <div class="mem-box" id="mem6">
+                <h1>MongoDB</h1>
+                <p><a href=""></a></p>
+                <hr>
+                <p><a href=""></a></p>
+                <hr>
+                <p><a href=""></a></p>
+                <hr>
+            </div>
+        </div>
+        <h1 class="side-heading">
+            Tech:
+        </h1>
+        <div class="tech-mem">
+
+            <div class="mem-box" id="mem7">
+                <h1></h1>
+                <p><a href=""></a></p>
+                <hr>
+                <p><a href=""></a></p>
+                <hr>
+                <p><a href=""></a></p>
+                <hr>
+            </div>
+
+            <div class="mem-box" id="mem8">
+                <h1></h1>
+                <p><a href=""></a></p>
+                <hr>
+                <p><a href=""></a></p>
+                <hr>
+                <p><a href=""></a></p>
+                <hr>
+            </div>
+
+            <div class="mem-box" id="mem9">
+                <h1></h1>
+                <p><a href=""></a></p>
+                <hr>
+                <p><a href=""></a></p>
+                <hr>
+                <p><a href=""></a></p>
+                <hr>
+            </div>
+
+        </div>
+    </div>
 
 
     <div class="footer">
         <section id="contact">
-            <i class="fa fa-phone" aria-hidden="true">  : </i> <br> <br>
-            <i class="fa-solid fa-envelope">  : </i> <br> <br>
-            <label for="" id="suggest-statement">Please Suggest Modifications if any <i class="fa-regular fa-face-smile"></i>, below: </label> <br>
+            <i class="fa fa-phone" aria-hidden="true"> : +91 1234576670</i> <br> <br>
+            <i class="fa-solid fa-envelope"> : test@test.com</i> <br> <br>
+            <label for="" id="suggest-statement">Please Suggest Modifications if any <i
+                    class="fa-regular fa-face-smile"></i>, below: </label> <br>
             <textarea name="suggestions" id="suggestions" cols="25" rows="5" placeholder="Enter here.."></textarea>
-            
+            <br> <button type="submit" id="submit-suggestions-btn">SUBMIT</button>
+            <div class="connect">
+                <h1>Connect With Me:</h1>
+                <div class="social-links">
+                    <a href="https://github.com/MohassinHussain"> <i class="fa-brands fa-github"></i></a>
+                    <a href="https://instagram.com/mohassin_hussain03/"> <i class="fa-brands fa-instagram"></i> </a>
+                    <a href="https://linkedin.com/in/MohassinHussain"><i class="fa-brands fa-linkedin"></i></a>
+
+                </div>
+            </div>
         </section>
     </div>
+    <script src="script.js"></script>
 </body>
+
 </html>
