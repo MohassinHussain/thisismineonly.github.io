@@ -26,7 +26,7 @@ body {
 
 @keyframes logoAnimie {
     0% {
-        color: #ff8345;
+        color: red;
     }
 
     20% {
@@ -143,13 +143,13 @@ nav a:hover {
 
 @keyframes slideIn {
     from {
-        margin-right: 10%;
+        margin-left: 0%;
 
     }
 
     to {
 
-        margin-left: 90%;
+        margin-left: 10%;
     }
 
     0% {
@@ -161,7 +161,7 @@ nav a:hover {
     }
 
     80% {
-        color: #4d8c04;
+        color: lime;
     }
 
     100% {
@@ -179,20 +179,6 @@ nav a:hover {
     font-weight: 400;
     font-size: 2em;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  animation: slideInAboutMe 4s ease;
-}
-
-@keyframes slideInAboutMe {
-    from {
-        margin-left: 0%;
-
-    }
-
-    to {
-        margin-left: 30px;
-    }
-
-    
 }
 
 /* my photo */
@@ -250,7 +236,7 @@ nav a:hover {
     font-size: 4em;
     color: rgb(17, 59, 59);
     font-family: 'Courier New', Courier, monospace;
-    background-color: rgb(233, 152, 152);
+    background-color: rgb(226, 189, 189);
     width: 28%;
     padding: 10px;
     border-radius: 10px;
@@ -298,15 +284,12 @@ nav a:hover {
     from {
         opacity: 0;
         transform: translateY(100px);
-      
     }
 
     to {
         opacity: 1;
         transform: translateY(0px);
-    
     }
-  
 }
 
 .box img {
@@ -356,8 +339,8 @@ nav a:hover {
 }
 
 #contact {
-    border: 2px solid rgb(21, 12, 1);
-    background-color: #eba7a7;
+    /* border: 2px solid rgb(21, 12, 1); */
+    background-color: #e7d4d4;
     width: 90%;
     height: 60svh;
     border-radius: 20px;
@@ -449,13 +432,15 @@ nav a:hover {
 /* Responsive */
 
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 768px) {
     .my-skills-container {
         z-index: 1;
     }
 
     nav {
         z-index: 10;
+        width: 95%;
+
     }
 
     nav ul {
@@ -504,7 +489,8 @@ nav a:hover {
     }
 
     .intro-container {
-        margin-top: 20%;
+
+        margin-top: 35%;
         /*margin-top: 20%;*/
     }
 
@@ -512,6 +498,8 @@ nav a:hover {
         margin-top: 1vh;
         height: 90vh;
         border-radius: 20px;
+        display: flex;
+        flex-direction: column;
     }
 
     .about-me h1 {
@@ -527,10 +515,10 @@ nav a:hover {
 
     .about-me p {
 
-        height: 20vh;
+        height: 24vh;
         margin: 30px;
         margin-left: 17%;
-        font-size: 1.5em;
+        font-size: 15px;
     }
 
     .my-photo {
@@ -549,16 +537,16 @@ nav a:hover {
         width: 90%;
         height: 80%;
         border-radius: 40%;
-        
+
     }
 
     .why-me-container {
-        height: 80vh;
+        height: 100vh;
         width: 100%;
-        background-color: #ffa98c;
+        background-color: #f3d1c5;
         /* display: flex;     */
         padding-top: 20px;
-        font-family: veranda;
+        font-family: monospace;
         border-radius: 66px 99px 36px 99px;
         animation: reveal ease-in-out both;
         animation-timeline: view();
@@ -569,13 +557,11 @@ nav a:hover {
         from {
             opacity: 0;
             trasform: translateY(100px);
-           
         }
 
         to {
             opacity: 1;
             transform: translateY(0px);
-          
         }
     }
 
@@ -598,7 +584,7 @@ nav a:hover {
 
     .skills-title {
         font-size: 2em;
-        background-color: rgb(233, 152, 152);
+        /* background-color: rgb(233, 152, 152); */
         width: 50%;
         padding: 10px;
         border-radius: 10px;
@@ -618,7 +604,7 @@ nav a:hover {
 
         animation: reveal ease-in-out both;
         animation-timeline: view();
-        animation-range: entry 50% cover 50%;
+        animation-range: entry 50% cover 40%;
     }
 
     .box {
@@ -626,13 +612,9 @@ nav a:hover {
         border: 2px solid black;
         /* padding: 180px; */
         padding: 20px;
-        width: 22%;
+        width: 15%;
         height: 30vh;
-
-
-        border-radius: 77px 114px 61px 69px;
-
-
+        border-radius: 20px;
 
         /*border-radius: 20px; */
         margin-top: 3%;
@@ -644,10 +626,9 @@ nav a:hover {
     }
 
     .box img {
-
         margin-top: 50%;
         margin-left: -5px;
-        width: 90px;
+        width: 50px;
         border-radius: 35px;
         filter: drop-shadow(10px 10px 14px);
     }
@@ -672,12 +653,12 @@ nav a:hover {
 
     .box:hover li {
         margin-top: 8px;
-        font-size: 1em;
+        font-size: .7em;
     }
 
 
     #contact {
-        height: 50svh;
+        height: 60svh;
         padding: 10px;
         font-size: 1em;
 
@@ -771,7 +752,7 @@ nav a:hover {
 
     animation: reveal ease-in-out both;
     animation-timeline: view();
-    animation-range: entry 50% cover 40%;
+    animation-range: entry 50% cover 30%;
 }
 
 
@@ -854,12 +835,40 @@ nav a:hover {
         width: 300px;
         height: 300px;
         border-radius: 20px;
-        margin-left: 21%;
+        margin-left: 0%;
 
         animation: reveal ease-in-out both;
         animation-timeline: view();
         animation-range: entry 50% cover 50%;
     }
+
+    .mem-box {
+        background-color: rgb(102, 255, 207);
+
+        /* padding: 180px; */
+        padding: 10px;
+        width: 24%;
+        height: 25vh;
+
+        border-radius: 20px;
+        margin-top: 3%;
+        align-items: center;
+        justify-content: center;
+        display: block;
+        filter: drop-shadow(8px 8px 2px rgb(130, 234, 130));
+        /* overscroll-behavior: contain; */
+        overflow: auto;
+    }
+    .side-heading {
+        font-size: 2em;
+    }
+    .mem-box h1 {
+        font-size: 1em;
+    }
+    .mem-box p {
+        font-size: .8em;
+    }
+
 }
 
 
@@ -874,7 +883,7 @@ nav a:hover {
 }
 
 .projects-main-container {
-    background-color: #c5b2da;
+    background-color: #dfd5ea;
     width: 100%;
     height: 140vh;
     margin-top: 10%;
@@ -988,18 +997,39 @@ nav a:hover {
 
 @media screen and (max-width: 768px) {
     .projects-main-container {
-        
-        height: 160vh;
+        width: 99%;
+        height: 155vh;
         margin-top: 30%;
-        margin-bottom: 20%;
+        margin-bottom: 10%;
 
         animation: reveal ease-in-out both;
         animation-timeline: view();
         animation-range: entry 50% cover 40%;
     }
 
+    .front-web-links h3,
+    .fullstack-web-links h3,
+    .aiml-links h3 {
+        font-size: 2em;
+    }
+
     .projects-header-content {
         margin: 30% 0 3% 10px;
+    }
+
+    .front-web-links a,
+    .fullstack-web-links a,
+    .aiml-links a {
+        font-size: 2em;
+
+    }
+
+    .front-web-projects h1,
+    .full-stack-web-projects h1,
+    .aiml-projects h1 {
+
+        font-size: 2em;
+
     }
 
     .ideas {
@@ -1025,7 +1055,7 @@ nav a:hover {
 
     }
 
-  
+
 }
 
 /* Resume */
