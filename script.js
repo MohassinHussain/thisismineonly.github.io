@@ -48,6 +48,7 @@ darkMode.addEventListener('click', () => {
   projectsMainContainer.style.backgroundColor = "grey"
   contactContainer.style.backgroundColor = "black"
   skillsBox.style.backgroundColor = "grey"
+
 })
 lightMode.addEventListener('click', () => {
   document.body.style.backgroundColor = "#e3d8d8";
@@ -66,9 +67,7 @@ const resumeHolder = document.querySelector('.resume-holder');
 const myResume = document.getElementById('my-resume');
 const closeResume = document.getElementById('close-resume-btn')
 
-
-viewResume.addEventListener('click', () => {
-  let x = window.matchMedia("(max-width: 768px)")
+viewResume.addEventListener('click', function () {
 
 
   resumeHolder.style.width = "90%";
@@ -78,16 +77,9 @@ viewResume.addEventListener('click', () => {
   closeResume.style.display = "flex";
   viewResume.style.display = "none";
 
-  // resumeHolder.style.width = "80%";
-  // resumeHolder.style.margin = "2rem";
-  // resumeHolder.style.height = "130vh"
-  // myResume.style.display = "flex";
-  // myResume.style.marginLeft = "10rem";
-  // myResume.style.height = "130vh";
-  // closeResume.style.display = "flex";
-  // viewResume.style.display = "none";
 
 })
+
 
 closeResume.addEventListener('click', () => {
   resumeHolder.style.width = "0";
@@ -97,6 +89,17 @@ closeResume.addEventListener('click', () => {
   viewResume.style.display = "flex";
   closeResume.style.display = "none";
 })
+
+
+
+
+
+
+const addMem = document.getElementById("add-mem");
+addMem.addEventListener('click', function () {
+  addMem.style.display = 'none'
+  console.log("DD");
+});
 
 
 

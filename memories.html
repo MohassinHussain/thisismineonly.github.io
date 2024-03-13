@@ -12,6 +12,7 @@
 </head>
 
 <body>
+
     <nav id="navbar">
         <h1 class="logo">MHs</h1>
         <i class="fa-solid fa-bars" id="ham"></i>
@@ -36,6 +37,11 @@
     </nav>
     <div class="memories-heading">
         <h1>MEMORIZING ALL STUFF. X, KEEP IN ONE PLACE .✓</h1>
+        <h3 style="margin: 16rem 0 18rem 0; filter: drop-shadow(10px 10px 10px black);">
+            These are the things which help me in fasten the work I do, since I might not want to waste much time on
+            finding to stuff required.
+        </h3>
+        <img src="./images/image.jpg" alt="">
     </div>
 
     <div class="memories-main-container">
@@ -45,9 +51,12 @@
         <div class="front-mem">
 
             <div class="mem-box" id="mem1">
+
+
                 <h1>
                     HTML/CSS
                 </h1>
+
                 <p><a href="https://fontawesome.com">font awesome</a></p>
                 <hr>
                 <p><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS">HTML with CSS MDN</a></p>
@@ -56,9 +65,15 @@
                 <hr>
                 <p><a href="https://css-tricks.com/">CSS Tricks</a></p>
                 <hr>
+                <p><a href="https://www.htmlcssbuttongenerator.com/border-radius-generator.html">CSS border-radius</a>
+                </p>
+                <hr>
+                <p><a href="https://uiverse.io/">Buttons and other elements</a> </p>
+                <hr>
             </div>
 
             <div class="mem-box" id="mem2">
+
                 <h1>
                     JS
                 </h1>
@@ -70,6 +85,7 @@
             </div>
 
             <div class="mem-box" id="mem3">
+
                 <h1>React</h1>
                 <p><a href="https://www.npmjs.com/package/package">npm package</a></p>
                 <hr>
@@ -86,6 +102,7 @@
         <div class="back-mem">
 
             <div class="mem-box" id="mem4">
+
                 <h1>FW NODE JS</h1>
                 <p><a href=""></a></p>
                 <hr>
@@ -97,6 +114,7 @@
             </div>
 
             <div class="mem-box" id="meme5">
+
                 <h1>Express</h1>
                 <p><a href=""></a></p>
                 <hr>
@@ -106,6 +124,7 @@
                 <hr>
             </div>
             <div class="mem-box" id="mem6">
+
                 <h1>MongoDB</h1>
                 <p><a href=""></a></p>
                 <hr>
@@ -121,18 +140,30 @@
         <div class="tech-mem">
 
             <div class="mem-box" id="mem7">
-                <h1></h1>
-                <p><a href=""></a></p>
+
+                <h1>VS Extensions</h1>
+                <p><a href="">Incredibly</a></p>
                 <hr>
-                <p><a href=""></a></p>
+                <p><a href="">Live Preview</a></p>
                 <hr>
-                <p><a href=""></a></p>
+                <p><a href="">REST client</a></p>
+                <hr>
+                <p><a href="">ES7</a></p>
+                <hr>
+                <p><a href="">Settings Sync</a></p>
+                <hr>
+                <p><a href="">POSTMAN</a></p>
+                <hr>
+                <p><a href="">VS code remote-ssh</a></p>
+                <hr>
+                <p><a href="">Live Share</a></p>
                 <hr>
             </div>
 
             <div class="mem-box" id="mem8">
-                <h1></h1>
-                <p><a href=""></a></p>
+
+                <h1>Images/ Backgrounds</h1>
+                <p><a href="https://www.gradientmagic.com/">gradient backgrounds</a></p>
                 <hr>
                 <p><a href=""></a></p>
                 <hr>
@@ -141,6 +172,7 @@
             </div>
 
             <div class="mem-box" id="mem9">
+
                 <h1></h1>
                 <p><a href=""></a></p>
                 <hr>
@@ -155,12 +187,14 @@
 
 
     <div class="footer">
-        <section id="contact">
-            <i class="fa fa-phone" aria-hidden="true"> : +91 1234576670</i> <br> <br>
+        <form action="" id="contact">
+            <i class="fa fa-phone" aria-hidden="true"> : +91 1234567890</i> <br> <br>
             <i class="fa-solid fa-envelope"> : test@test.com</i> <br> <br>
-            <label for="" id="suggest-statement">Please Suggest Modifications if any <i
+            <label for="email-address" id="suggest-statement">Please Suggest Modifications if any <i
                     class="fa-regular fa-face-smile"></i>, below: </label> <br>
-            <textarea name="suggestions" id="suggestions" cols="25" rows="5" placeholder="Enter here.."></textarea>
+            <input id="email-address" placeholder="Enter your emailaddress" type="email" required>
+            <input id="name" placeholder="Enter your name" type="name" required>
+            <br> <textarea name="suggestions" id="suggestions" cols="25" rows="5" placeholder="Enter here.."></textarea>
             <br> <button type="submit" id="submit-suggestions-btn">SUBMIT</button>
             <div class="connect">
                 <h1>Connect With Me:</h1>
@@ -171,9 +205,53 @@
 
                 </div>
             </div>
-        </section>
+        </form>
     </div>
     <script src="script.js"></script>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-app.js";
+        import { getDatabase, set, ref } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-database.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyDCltzY2I7pNVMX9uuc5N-XSVZCB6hp3mc",
+            authDomain: "portfolio20-d3821.firebaseapp.com",
+            databaseURL: "https://portfolio20-d3821-default-rtdb.firebaseio.com",
+            projectId: "portfolio20-d3821",
+            storageBucket: "portfolio20-d3821.appspot.com",
+            messagingSenderId: "1034389900525",
+            appId: "1:1034389900525:web:14cb17015f44a92ff110e4"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const db = getDatabase(app);
+
+        document.getElementById("submit-suggestions-btn").addEventListener('click', function (event) {
+            event.preventDefault();
+            set(ref(db, 'user/' + document.getElementById('name').value), {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email-address').value,
+                suggestions: document.getElementById('suggestions').value
+            })
+            document.getElementById("submit-suggestions-btn").style.cursor = 'progress'
+            alert("Submitted..Thank you for your valuable feedbacknor suggestion");
+            document.getElementById('contact').addEventListener('click', function () { this.reset() })
+        })
+
+
+
+
+    </script>
+
+
+    <script>
+
+
+    </script>
 </body>
 
 </html>

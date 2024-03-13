@@ -6,7 +6,13 @@
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: #e3d8d8;
+    /* background-image: url("./images/bg3.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; */
 }
+
+
 
 .logo {
     float: left;
@@ -20,7 +26,7 @@ body {
 
 @keyframes logoAnimie {
     0% {
-        color: red;
+        color: #ff8345;
     }
 
     20% {
@@ -137,13 +143,13 @@ nav a:hover {
 
 @keyframes slideIn {
     from {
-        margin-left: 0%;
+        margin-right: 10%;
 
     }
 
     to {
 
-        margin-left: 10%;
+        margin-left: 90%;
     }
 
     0% {
@@ -155,7 +161,7 @@ nav a:hover {
     }
 
     80% {
-        color: lime;
+        color: #4d8c04;
     }
 
     100% {
@@ -173,6 +179,20 @@ nav a:hover {
     font-weight: 400;
     font-size: 2em;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  animation: slideInAboutMe 4s ease;
+}
+
+@keyframes slideInAboutMe {
+    from {
+        margin-left: 0%;
+
+    }
+
+    to {
+        margin-left: 30px;
+    }
+
+    
 }
 
 /* my photo */
@@ -192,8 +212,15 @@ nav a:hover {
     border-radius: 30%;
     margin-top: 20%;
     margin-left: 10%;
-    box-shadow: 10px 10px 5px rgb(210, 121, 5);
-    /* filter: drop-shadow(10px 10px 5px blue); */
+    box-shadow: 10px 10px 5px rgb(234, 188, 128);
+    filter: drop-shadow(10px 10px 5px rgb(242, 217, 167));
+
+}
+
+.why-me-container {
+    animation: reveal ease-in-out both;
+    animation-timeline: view();
+    animation-range: entry 50% cover 40%;
 }
 
 .why-me-container h1 {
@@ -203,7 +230,6 @@ nav a:hover {
     align-items: end;
     margin: 20px;
     margin-left: 6%;
-
 }
 
 .why-me-container li {
@@ -212,8 +238,7 @@ nav a:hover {
     height: 10vh;
     list-style: none;
     font-size: 3em;
-    text-transform: uppercase;
-    text-decoration: underline;
+    margin-bottom: 8rem;
 }
 
 
@@ -261,6 +286,27 @@ nav a:hover {
     justify-content: center;
     display: block;
     filter: drop-shadow(10px 10px 20px);
+    overflow: auto;
+
+    animation: reveal ease-in-out both;
+    animation-timeline: view();
+    animation-range: entry 50% cover 50%;
+
+}
+
+@keyframes reveal {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+      
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    
+    }
+  
 }
 
 .box img {
@@ -294,8 +340,8 @@ nav a:hover {
 
 .box:hover li {
     margin-top: 13px;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center;
+    justify-content: center; */
     display: flex;
     font-size: 1.5em;
     color: rgb(60, 20, 5);
@@ -313,12 +359,16 @@ nav a:hover {
     border: 2px solid rgb(21, 12, 1);
     background-color: #eba7a7;
     width: 90%;
-    height: 50vh;
+    height: 60svh;
     border-radius: 20px;
     margin-bottom: 20px;
     padding: 10px;
     font-size: 2em;
     font-family: monospace;
+
+    animation: reveal ease-in-out both;
+    animation-timeline: view();
+    animation-range: entry 50% cover 50%;
 }
 
 #contact textarea {
@@ -326,6 +376,7 @@ nav a:hover {
     border-radius: 10px;
     padding: 5px;
     resize: none;
+    cursor: pointer;
 
 }
 
@@ -335,11 +386,31 @@ nav a:hover {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+#email-address,
+#name {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 15%;
+    padding: 12px;
+    font-size: medium;
+    border-radius: 5px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
 #submit-suggestions-btn {
     padding: 5px;
     border-radius: 5px;
     background-color: #99ff99;
     font-size: 0.6em;
+    /* cursor: progress;    */
+}
+
+#submit-suggestions-btn:hover {
+    padding: 7px;
+    border-radius: 10px;
+    background-color: #1b6796;
+    color: white;
 }
 
 .connect {
@@ -469,6 +540,8 @@ nav a:hover {
 
         /* padding: 5px;
           padding-left: 20%; */
+
+
     }
 
     .my-photo img {
@@ -476,7 +549,7 @@ nav a:hover {
         width: 90%;
         height: 80%;
         border-radius: 40%;
-
+        
     }
 
     .why-me-container {
@@ -485,6 +558,25 @@ nav a:hover {
         background-color: #ffa98c;
         /* display: flex;     */
         padding-top: 20px;
+        font-family: veranda;
+        border-radius: 66px 99px 36px 99px;
+        animation: reveal ease-in-out both;
+        animation-timeline: view();
+        animation-range: entry 50% cover 50%;
+    }
+
+    @keyframes reveal {
+        from {
+            opacity: 0;
+            trasform: translateY(100px);
+           
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0px);
+          
+        }
     }
 
     .why-me-container h1 {
@@ -495,11 +587,11 @@ nav a:hover {
     .why-me-container li {
         margin-top: 10px;
         margin-left: 60px;
-        height: 10vh;
+        height: 0vh;
         list-style: none;
-        font-size: 2em;
-        text-transform: uppercase;
-        text-decoration: underline;
+        font-size: 1.5em;
+
+
     }
 
 
@@ -511,6 +603,9 @@ nav a:hover {
         padding: 10px;
         border-radius: 10px;
 
+        animation: reveal ease-in-out both;
+        animation-timeline: view();
+        animation-range: entry 50% cover 50%;
     }
 
     .my-skills-container {
@@ -521,6 +616,9 @@ nav a:hover {
         border-radius: 20px;
         position: unset;
 
+        animation: reveal ease-in-out both;
+        animation-timeline: view();
+        animation-range: entry 50% cover 50%;
     }
 
     .box {
@@ -531,12 +629,18 @@ nav a:hover {
         width: 22%;
         height: 30vh;
 
-        border-radius: 20px;
+
+        border-radius: 77px 114px 61px 69px;
+
+
+
+        /*border-radius: 20px; */
         margin-top: 3%;
         align-items: center;
         justify-content: center;
         display: block;
         filter: drop-shadow(8px 8px 2px);
+        overflow: auto;
     }
 
     .box img {
@@ -573,10 +677,15 @@ nav a:hover {
 
 
     #contact {
-        height: 35vh;
+        height: 50svh;
         padding: 10px;
         font-size: 1em;
+
+        animation: reveal ease-in-out both;
+        animation-timeline: view();
+        animation-range: entry 0% cover 30%;
     }
+
 
 
     #suggest-statement {
@@ -584,11 +693,32 @@ nav a:hover {
         margin-bottom: 5px
     }
 
+    #email-address,
+    #name {
+        font-size: medium;
+        margin-top: 10px;
+        width: 30%;
+        margin-bottom: 10px;
+        padding: 8px;
+        border-radius: 5px;
+        border: 1px solid black;
+    }
+
     #submit-suggestions-btn {
         padding: 5px;
         border-radius: 5px;
         background-color: #99ff99;
+        font-size: medium;
     }
+
+    #submit-suggestions-btn:hover {
+        padding: 7px;
+        border-radius: 10px;
+        background-color: #1b6796;
+        color: white;
+    }
+
+
 
     .connect {
         font-size: 2em;
@@ -615,8 +745,20 @@ nav a:hover {
     font-size: 2em;
     font-family: cursive;
     margin-left: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
+.memories-heading img {
+    width: 60%;
+    height: 50%;
+    border-radius: 20px;
+    margin-left: 21%;
+
+    animation: reveal ease-in-out both;
+    animation-timeline: view();
+    animation-range: entry 50% cover 50%;
+}
 
 .memories-main-container {
     height: 140vh;
@@ -627,6 +769,9 @@ nav a:hover {
     position: unset;
     margin-top: 100px;
 
+    animation: reveal ease-in-out both;
+    animation-timeline: view();
+    animation-range: entry 50% cover 40%;
 }
 
 
@@ -644,6 +789,8 @@ nav a:hover {
     justify-content: center;
     display: block;
     filter: drop-shadow(8px 8px 2px rgb(130, 234, 130));
+    /* overscroll-behavior: contain; */
+    overflow: auto;
 }
 
 .side-heading {
@@ -662,7 +809,7 @@ nav a:hover {
 
 .mem-box:hover {
     transform: rotateY(180deg);
-    transition: 3s ease;
+    transition: 2s ease;
     background-color: #ccccff;
 }
 
@@ -702,20 +849,41 @@ nav a:hover {
     padding: 3px;
 }
 
+@media screen and (max-width: 768px) {
+    .memories-heading img {
+        width: 300px;
+        height: 300px;
+        border-radius: 20px;
+        margin-left: 21%;
 
+        animation: reveal ease-in-out both;
+        animation-timeline: view();
+        animation-range: entry 50% cover 50%;
+    }
+}
 
 
 
 
 /* Projects  */
+.projects-header-content {
+    margin: 20% 0 3% 10px;
+    font-family: cursive;
+    font-size: 2em;
+    filter: drop-shadow(5px 10px 10px black);
+}
 
 .projects-main-container {
     background-color: #c5b2da;
     width: 100%;
-    height: 130vh;
+    height: 140vh;
     margin-top: 10%;
     margin-bottom: 10%;
     /* padding: 0.5rem; */
+
+    animation: reveal ease-in-out both;
+    animation-timeline: view();
+    animation-range: entry 50% cover 40%;
 }
 
 .projects-main-container h1 {
@@ -794,17 +962,70 @@ nav a:hover {
     color: rgb(191, 20, 20);
 }
 
+.ideas {
+    margin-top: 3rem;
+    text-decoration: underline;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ideas button {
+    border-radius: 10px;
+    padding: 10px;
+    width: 20%;
+    background-color: #7dcd7d;
+    font-size: 1em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+}
+
+.ideas button:hover {
+    background-color: #9090dc;
+
+}
+
 @media screen and (max-width: 768px) {
     .projects-main-container {
-
-        height: 150vh;
+        
+        height: 160vh;
         margin-top: 30%;
-        margin-bottom: 10%;
+        margin-bottom: 20%;
+
+        animation: reveal ease-in-out both;
+        animation-timeline: view();
+        animation-range: entry 50% cover 40%;
+    }
+
+    .projects-header-content {
+        margin: 30% 0 3% 10px;
+    }
+
+    .ideas {
+        text-decoration: underline;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .ideas button {
+        border-radius: 10px;
+        padding: 10px;
+        width: 60%;
+        background-color: #7dcd7d;
+        font-size: 1em;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 600;
+    }
+
+    .ideas button:hover {
+        background-color: #9090dc;
 
     }
 
-
-
+  
 }
 
 /* Resume */
